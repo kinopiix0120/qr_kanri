@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="manifest" href="manifest.json">
+  <title>管理QRコード生成</title>
+</head>
+
+<body>
+  <div class="main">
+
+    <h1>管理QRコード生成</h1>
+
+    <div class="qr-title"></div>
+    <div id="qrcode"></div>
+
+    <div id="form-area">
+
+      <div class="form-item">
+        <label for="title">題名</label>
+        <input type="text" id="title" placeholder="例：○○設備" maxlength="20">
+      </div>
+
+      <div class="form-item">
+        <label for="management-number">管理番号</label>
+        <input type="text" id="management-number" placeholder="例：12345678">
+      </div>
+
+      <div class="form-item">
+        <label for="manager">管理者</label>
+        <input type="text" id="manager" placeholder="例：山田太郎">
+      </div>
+
+      <div class="form-item">
+        <label for="storage-location">保管場所</label>
+        <input type="text" id="storage-location" placeholder="例：倉庫A-12">
+      </div>
+
+      <div class="form-item">
+        <label for="notes">特記事項</label>
+        <input type="text" id="notes" placeholder="例：定期点検対象" maxlength="20">
+      </div>
+
+      <button type="button" id="generate-button">QRコードを生成</button>
+
+      <button type="button" id="save-button">画像を保存</button>
+
+    </div>
+
+  </div>
+
+  <script src="qrcode.min.js"></script>
+  <script src="script.js?v=9"></script>
+</body>
+
+</html>

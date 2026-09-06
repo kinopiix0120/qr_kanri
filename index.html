@@ -55,6 +55,13 @@
 
   <script src="qrcode.min.js"></script>
   <script src="script.js?v=9"></script>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js");
+    }
+  </script>
+  
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 {
-  "name": "QRコード生成ツール",
-  "short_name": "QRコード",
+  "name": "管理番号QRコード化",
+  "short_name": "管理番号QR化",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
